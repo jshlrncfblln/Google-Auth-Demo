@@ -26,7 +26,10 @@
   const analytics = getAnalytics(app);
   const auth = getAuth(app);
 
-  getRedirectResult(auth)
+  googleBtn.addEventListener('click' , (e) => {
+    signInWithRedirect(auth, provider);
+
+    getRedirectResult(auth)
     .then((result) => {
         // This gives you a Google Access Token. You can use it to access Google APIs.
         const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -35,6 +38,7 @@
         // The signed-in user info.
         const user = result.user;
         // IdP data available using getAdditionalUserInfo(result)
+        alert(user.displayName);
         // ...
     }).catch((error) => {
         // Handle Errors here.
@@ -46,7 +50,5 @@
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
   });
-
-  googleBtn.addEventListener('click' , (e) => {
 
   } )
