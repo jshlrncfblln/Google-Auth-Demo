@@ -12,7 +12,7 @@
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: "AIzaSyCyxdj_suoNiG8zLxNZMpAFCAltojHHVyo",
-    authDomain: "authentication-demo-2b062.firebaseapp.com",
+    authDomain: "login-with-google-auth.vercel.app",
     projectId: "authentication-demo-2b062",
     storageBucket: "authentication-demo-2b062.appspot.com",
     messagingSenderId: "192740302855",
