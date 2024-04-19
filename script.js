@@ -6,7 +6,7 @@
   import { GoogleAuthProvider, getAuth, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
   
 
-  const provider = new GoogleAuthProvider();
+  const provider = new GoogleAuthProvider(app);
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
