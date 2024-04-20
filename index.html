@@ -111,7 +111,7 @@
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             // Redirect to dashboard
-            window.location.href = "welcome.html"; // Change "dashboard.html" to your actual dashboard URL
+            window.location.href = "https://login-with-google-auth.vercel.app/welcome.html"; // Change "dashboard.html" to your actual dashboard URL
         }).catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
